@@ -7,12 +7,11 @@ export const routes: Routes = [
     redirectTo: 'demos/classic',
     pathMatch: 'full',
   },
-//   {
-//     path: '',
-//     component: UseLayout,
-//     loadChildren: () =>
-//       import('./views/views.route').then((mod) => mod.VIEW_ROUTES),
-//   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./views/views.route').then((mod) => mod.VIEW_ROUTES),
+  },
 //   {
 //     path: 'shop',
 //     component: ShopLayout,

@@ -1,11 +1,11 @@
 import { Route } from '@angular/router'
 
 export const VIEW_ROUTES: Route[] = [
-  // {
-  //   path: 'demos',
-  //   loadChildren: () =>
-  //     import('./demos/demos.route').then((mod) => mod.DEMO_ROUTE),
-  // },
+  {
+    path: 'demos',
+    loadChildren: () =>
+      import('./demos/demos.route').then((mod) => mod.DEMO_ROUTE),
+  },
   // {
   //   path: 'about',
   //   loadChildren: () =>
