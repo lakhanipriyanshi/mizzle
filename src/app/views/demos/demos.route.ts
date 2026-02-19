@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router'
-import { Default } from './default/default'
 import { CreativeAgency } from './creative-agency/creative-agency'
+import { Default } from './default/default'
 
 export const DEMO_ROUTE: Routes = [
   {
