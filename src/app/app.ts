@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { provideIcons } from '@ng-icons/core';
 import * as LucideIcons from '@ng-icons/lucide';
+import { initPreline } from './components/preline';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,7 @@ import * as LucideIcons from '@ng-icons/lucide';
 })
 export class App {
   protected readonly title = signal('mizzle');
+    constructor() {
+        initPreline();
+    }
 }

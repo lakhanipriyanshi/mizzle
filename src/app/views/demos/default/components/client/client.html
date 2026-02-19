@@ -1,0 +1,26 @@
+<section class="lg:pt-28 md:pt-20 pt-16">
+    <div class="container">
+        <div class="grid md:grid-cols-4 grid-cols-1 items-center">
+            <div class="md:col-span-1 md:mb-0 mb-4">
+                <h5 class="text-bold md:text-2xl text-xl lg:w-50 md:w-30">100+ Companies trust us</h5>
+            </div>
+
+            <div class="md:col-span-3">
+                <div class="swiper">
+                    <swiper-container loop="true" autoplay="true" slides-per-view="2" space-between="50"
+    breakpoints='{
+            "576": { "slidesPerView": 3 },
+            "992": { "slidesPerView": 4 },
+            "1200": { "slidesPerView": 5 }
+          }' class="swiper-wrapper flex items-center">
+                        @for (item of clientTestimonialData; track $index) {
+                        <swiper-slide class="swiper-slide flex justify-center group">
+                            <img [src]="item.image" class="grayscale group-hover:grayscale-0 transition-all duration-300" alt="client-img" />
+                        </swiper-slide>
+                        }
+                    </swiper-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
