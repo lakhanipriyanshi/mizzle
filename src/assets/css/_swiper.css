@@ -1,0 +1,121 @@
+/* Custom Swiper CSS */
+
+.swiper {
+    --swiper-pagination-bullet-inactive-color: var(--color-default-600)
+}
+.swiper-pagination.swiper-pagination-line.swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    margin: 0 4px;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    @apply bg-primary;
+}
+
+
+.swiper-button-next {
+    right: 0;
+
+    &:after {
+        display: none !important;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+
+    &:after {
+        display: none !important;
+    }
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    pointer-events: visible;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-primary);
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: var(--color-primary);
+}
+
+/* // Pagination style */
+.swiper-pagination.swiper-pagination-primary {
+    .swiper-pagination-bullet {
+        background-color: var(--color-default-500);
+        transition:
+            width 0.3s ease-in-out,
+            height 0.3s ease-in-out,
+            background-color 0.3s ease-in-out;
+
+        &.swiper-pagination-bullet-active {
+            background-color: var(--color-primary) !important;
+            width: 20px;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* // Pagination white */
+.swiper-pagination.swiper-pagination-white {
+    .swiper-pagination-bullet {
+        background-color: white;
+        opacity: 0.6;
+        transition:
+            width 0.3s ease-in-out,
+            height 0.3s ease-in-out,
+            background-color 0.3s ease-in-out;
+
+        &.swiper-pagination-bullet-active {
+            background-color: white;
+            width: 20px;
+            border-radius: 5px;
+            opacity: 1;
+        }
+    }
+}
+
+/* // Slider pagination */
+.swiper-pagination.swiper-pagination-line {
+    .swiper-pagination-bullet {
+        width: 30px;
+        height: 3px;
+        border-radius: 0;
+        background-color: white;
+    }
+}
+
+/* // Slider pagination progress primary */
+.swiper-pagination.swiper-pagination-progress-primary {
+    background-color: var(--color-default-300);
+
+    .swiper-pagination-progressbar-fill {
+        background-color: var(--color-primary);
+    }
+}
+
+/* // Swiper negative */
+.swiper-outside-end-n20 {
+    margin-right: -20vw;
+}
+
+/* 
+@include media-breakpoint-down(md) {
+    .swiper-outside-end-n20 {
+        margin-right: 0;
+    }
+} */
+
+/* // Image scale */
+.swiper-img-scale .scale-img {
+    transition: transform 5000ms linear 0s;
+}
+
+.swiper-img-scale .swiper-slide-active .scale-img {
+    transform: scale(1.07, 1.07);
+}

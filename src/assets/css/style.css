@@ -1,0 +1,104 @@
+/*
+Template Name: Mizzle - Technology and Corporate Tailwind CSS Template
+Version: 1.0.0
+Author: StackBros
+File: Style CSS File
+*/
+
+/* Swiper CSS */
+/* @import "swiper/swiper-bundle.css";
+@import "glightbox/dist/css/glightbox.min.css"; */
+
+/* TailwindCSS */
+@import "tailwindcss";
+
+
+/* Plugin */
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms"; 
+
+/* Preline UI */
+@import "preline/variants.css";
+@source "preline/dist/*.js";
+
+
+/* Iconify Icons
+@plugin "@iconify/tailwind4" {
+    prefixes: tabler, lucide;
+} */
+
+/* Themes Config */
+@theme {
+
+    --font-body: "Inter", serif;
+    --font-heading: "Instrument Sans", serif;
+
+    --color-body-bg: #fff;
+    --color-body-color: #606261;
+
+    --color-primary: #09b850;
+    --color-primary-hover: #089c44;
+
+    --color-secondary: #85878a;
+    --color-secondary-hover: #717375;
+
+    --color-success: #0cbc87;
+    --color-success-hover: #0aa073;
+
+    --color-info: #17a2b8;
+    --color-info-hover: #148a9c;
+
+    --color-warning: #f7c32e;
+    --color-warning-hover: #f8cc4d;
+
+    --color-danger: #d6293e;
+    --color-danger-hover: #b62335;
+
+    --color-light: #f8f8f8;
+    --color-light-hover: #f0f0f0;
+
+    --color-dark: #202124;
+    --color-dark-hover: #2c2e33;
+
+    --color-default-50: var(--color-neutral-50);
+    --color-default-100: var(--color-neutral-100);
+    --color-default-200: var(--color-neutral-200);
+    --color-default-300: var(--color-neutral-300);
+    --color-default-400: var(--color-neutral-400);
+    --color-default-500: var(--color-neutral-500);
+    --color-default-600: var(--color-neutral-600);
+    --color-default-700: var(--color-neutral-700);
+    --color-default-800: var(--color-neutral-800);
+    --color-default-900: var(--color-neutral-900);
+    --color-default-950: var(--color-neutral-950);
+}
+
+.dark {
+    color-scheme: dark;
+
+    --color-body-bg: #121519;
+    --color-body-color: rgba(255, 255, 255, 0.7);
+
+    --color-light: #202124;
+    --color-light-hover: #2c2e33;
+
+    --color-default-50: var(--color-zinc-950);
+    --color-default-100: #292a2d;
+    --color-default-200: var(--color-zinc-800);
+    --color-default-300: var(--color-zinc-700);
+    --color-default-400: var(--color-zinc-600);
+    --color-default-500: var(--color-zinc-500);
+    --color-default-600: var(--color-zinc-400);
+    --color-default-700: var(--color-zinc-300);
+    --color-default-800: var(--color-zinc-200);
+    --color-default-900: var(--color-zinc-100);
+    --color-default-950: var(--color-zinc-50);
+}
+
+@custom-variant light (&:where(.light, .light *));
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "./_general.css";
+@import "./_swiper.css";
+@import "./_plyr.css";
+@import "./_mockup.css";

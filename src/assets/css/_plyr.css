@@ -1,0 +1,15 @@
+/* GLightbox theme color */
+.plyr__control--overlaid,
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded="true"],
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded="true"],
+.plyr__menu__container .plyr__control[role="menuitemradio"][aria-checked="true"]:before {
+    background: var(--color-primary);
+}
+
+.plyr--full-ui input[type="range"] {
+    color: var(--color-primary);
+}
