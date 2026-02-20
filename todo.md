@@ -1,0 +1,1 @@
+icon size and ng-icon ne fill na class nathi lagta
