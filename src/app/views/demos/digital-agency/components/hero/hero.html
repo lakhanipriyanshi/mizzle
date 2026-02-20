@@ -1,0 +1,52 @@
+<section class="py-0">
+    <div class="swiper overflow-hidden relative">
+        <swiper-container class="swiper-wrapper" effect="fade" loop="true" speed="1000" autoplay-delay="3000" autoplay-disable-on-interaction="false" [pagination]="{ el: '.swiper-pagination', clickable: true }" >
+            <swiper-slide class="swiper-slide w-full min-h-screen bg-[url('/images/bg/10.jpg')] bg-center bg-cover bg-no-repeat">
+                <div class="relative size-full">
+                    <div class="absolute inset-0 bg-linear-to-b from-black/40 to-black/40 min-h-screen"></div>
+                    <div class="relative z-10 flex items-center justify-center h-full lg:py-20 py-13 px-4">
+                        <div class="max-w-3xl text-center py-32">
+                            <span class="bg-body-bg/10 text-white text-sm rounded px-3 py-2 inline-block">🚀 #World's best software agency</span>
+                            <h1 class="text-white text-[45px] md:text-[58px] lg:text-7xl font-bold my-6">
+                                Leading the Way in
+                                <span class="text-primary">software</span>
+                                innovation
+                            </h1>
+
+                            <p class="text-white mb-10">Whether you're a gaming enthusiast or simply seeking an extraordinary escape from reality, our Virtual VR product is your portal to endless excitement.</p>
+
+                            <a [routerLink]="[]" class="inline-flex items-center gap-2 bg-body-bg text-default-900 px-6 py-3 rounded-lg text-lg font-medium hover:bg-default-200 transition-all duration-300 group">
+                                Get started now
+                                <iconify-icon icon="lucide:arrow-right" class="size-4.5 group-hover:translate-x-0.75 transition-all duration-300"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+
+            <swiper-slide class="swiper-slide w-full min-h-screen bg-[url('/images/bg/09.jpg')] bg-center bg-cover bg-no-repeat">
+                <div class="relative size-full">
+                    <div class="absolute inset-0 bg-linear-to-b from-black/40 to-black/40 min-h-screen"></div>
+                    <div class="relative z-10 flex items-center justify-start h-full lg:py-20 py-13 px-6 lg:ms-82">
+                        <div class="max-w-3xl text-start py-32">
+                            <h1 class="text-white text-[45px] md:text-[58px] lg:text-7xl font-bold mb-6">
+                                Empower Your
+                                <span class="font-light">Business</span>
+                                with
+                                <span class="font-light">Innovation</span>
+                            </h1>
+
+                            <p class="text-white mb-10">Whether you're a gaming enthusiast or simply seeking an extraordinary escape from reality, our Virtual VR product is your portal to endless excitement.</p>
+
+                            <a [routerLink]="[]" class="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-primary-hover transition-all duration-300">
+                                Explore Our Services
+                                <iconify-icon icon="lucide:arrow-right" class="size-4.5 group-hover:translate-x-0.75 transition-all duration-300"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>

@@ -7,10 +7,11 @@ import { Services } from "./components/services/services";
 import { Pricing } from "./components/pricing/pricing";
 import { Testimonial } from "./components/testimonial/testimonial";
 import { Cta } from "./components/cta/cta";
+import { Footer } from "@app/components/footer/footer";
 
 @Component({
   selector: 'app-default',
-  imports: [Topbar, Hero, Client, About, Services, Pricing, Testimonial, Cta],
+  imports: [Topbar, Hero, Client, About, Services, Pricing, Testimonial, Cta, Footer],
   templateUrl: './default.html',
   styles: ``,
 })

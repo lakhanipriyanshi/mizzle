@@ -1,0 +1,18 @@
+<div class="inline-flex items-center gap-1">
+  @for (star of stars; track $index) {
+
+    @if (isFull($index)) {
+      <iconify-icon icon="lucide:star">
+      </iconify-icon>
+
+    } @else if (isHalf($index)) {
+      <iconify-icon icon="lucide:star-half">
+      </iconify-icon>
+
+    } @else {
+      <iconify-icon icon="lucide:star">
+      </iconify-icon>
+    }
+
+  }
+</div>

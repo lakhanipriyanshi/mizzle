@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { NgIcon } from '@ng-icons/core';
-import { RouterLink } from "@angular/router";
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'default-about',
-  imports: [NgIcon, RouterLink],
+  imports: [RouterLink],
   templateUrl: './about.html',
   styles: ``,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class About {
-
-}
+export class About {}

@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router'
 import { CreativeAgency } from './creative-agency/creative-agency'
 import { Default } from './default/default'
+import { DigitalAgency } from './digital-agency/digital-agency'
 
 export const DEMO_ROUTE: Routes = [
   {
@@ -13,11 +14,11 @@ export const DEMO_ROUTE: Routes = [
     component: CreativeAgency,
     data: { title: 'Creative Agency' },
   },
-  // {
-  //   path: 'agency/digital',
-  //   component: DigitalAgency,
-  //   data: { title: 'Digital Agency' },
-  // },
+  {
+    path: 'agency/digital',
+    component: DigitalAgency,
+    data: { title: 'Digital Agency' },
+  },
   // {
   //   path: 'agency/design',
   //   component: DesignAgency,

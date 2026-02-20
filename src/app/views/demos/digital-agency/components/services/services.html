@@ -1,0 +1,76 @@
+<section class="bg-default-100 overflow-hidden lg:py-28 md:py-20 py-16">
+    <div class="container md:mb-14 mb-6">
+        <div class="flex flex-wrap md:justify-between items-center">
+            <h2 class="lg:w-lg w-xs lg:text-[45px] md:text-4xl text-3xl">Accelerating your digital transformation</h2>
+            <div class="lg:w-md w-xs md:ms-auto lg:mt-0 mt-4">
+                <p>Our team of experts specializes in delivering tailored services designed to propel your organization forward in today's fast-paced digital landscape.</p>
+
+                <div class="flex items-center gap-4 mt-3">
+                    <a [routerLink]="[]" class="size-10 flex items-center justify-center rounded-full bg-body-bg hover:bg-default-200 border border-default-200 transition-all duration-300" id="swiper-button-prev-team">
+                        <iconify-icon icon="lucide:arrow-left" class="text-default-800 size-4"></iconify-icon>
+                    </a>
+
+                    <a [routerLink]="[]" class="size-10 flex items-center justify-center rounded-full bg-body-bg hover:bg-default-200 border border-default-200 transition-all duration-300" id="swiper-button-next-team">
+                        <iconify-icon icon="lucide:arrow-right" class="text-default-800 size-4"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:ms-80 px-4">
+        <div class="swiper">
+            <swiper-container class="swiper-wrapper" [spaceBetween]="50" [loop]="false" [navigation]="navigation" [autoplay]="true" [breakpoints]="{
+    '576': { slidesPerView: 1 },
+    '768': { slidesPerView: 3 },
+    '992': { slidesPerView: 3 },
+    '1200': { slidesPerView: 4 }
+  }">
+                @for (item of servicesData; track $index) {
+                <swiper-slide class="swiper-slide">
+                    <div class="bg-body-bg rounded-lg overflow-hidden shadow group">
+                        <div class="overflow-hidden">
+                            <img [src]="item.image" alt="service image" class="w-full h-auto transform transition-transform duration-500 group-hover:scale-105" />
+                        </div>
+
+                        <div class="p-6">
+                            <h6 class="text-xl font-bold mb-2">
+                                <a [routerLink]="item.url">{{ item.title }}</a>
+                            </h6>
+                            <p>{{ item.description }}</p>
+                        </div>
+
+                        <div class="p-6 border-t border-default-200 bg-body-bg">
+                            <a [routerLink]="[]" class="inline-flex items-center gap-1.5 text-primary group-hover:text-primary-hover transition">
+                                Explore this service
+                                <iconify-icon icon="lucide:arrow-right" class="size-4 group-hover:translate-x-1 transition-all duration-300"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                }
+            </swiper-container>
+        </div>
+
+        <div class="md:mt-14 mt-10 flex flex-wrap items-center gap-2">
+            <ul class="flex items-center -space-x-3.5">
+                <li>
+                    <img src="/images/avatar/06.jpg" class="size-10 rounded-full" />
+                </li>
+
+                <li>
+                    <img src="/images/avatar/05.jpg" class="size-10 rounded-full" />
+                </li>
+
+                <li class="size-10 rounded-full bg-dark flex justify-center items-center">
+                    <iconify-icon icon="lucide:phone" class="text-white size-4"></iconify-icon>
+                </li>
+            </ul>
+
+            <p class="font-medium">
+                Maximize Productivity by Simplifying Solution Search
+                <a [routerLink]="[]" class="underline font-bold hover:text-primary transition-all">Got a project in mind?</a>
+            </p>
+        </div>
+    </div>
+</section>

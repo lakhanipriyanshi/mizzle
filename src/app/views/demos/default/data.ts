@@ -1,39 +1,5 @@
 import { credits } from '@/app/common/constants'
 
-export type ClientType = {
-  icon?: string
-  image?: string
-  name?: string
-  url?: string
-}
-
-export type ServiceType = {
-  title: string
-  description: string
-  icon: string
-  url?: string
-}
-
-export type TestimonialType = {
-  userId?: User['id']
-  user?: User
-  title?: string
-  comment: string
-  rating: number
-}
-
-export type User = {
-  id?: string
-  avatar?: string
-  email?: string
-  username?: string
-  password?: string
-  firstName?: string
-  lastName?: string
-  role?: string
-  token?: string
-}
-
 const client1Img = '/images/client/01.svg'
 const client2Img = '/images/client/02.svg'
 const client3Img = '/images/client/03.svg'
@@ -43,6 +9,13 @@ const avatar1 = '/images/avatar/01.jpg'
 const avatar2 = '/images/avatar/02.jpg'
 const avatar3 = '/images/avatar/03.jpg'
 const avatar5 = '/images/avatar/05.jpg'
+
+export type ClientType = {
+  icon?: string
+  image?: string
+  name?: string
+  url?: string
+}
 
 export const clientData: ClientType[] = [
   {
@@ -77,50 +50,69 @@ export const clientData: ClientType[] = [
   },
 ]
 
+export type ServiceType = {
+  title: string
+  description: string
+  icon: string
+  url?: string
+}
+
 export const services: ServiceType[] = [
   {
     title: 'Digital Marketing',
     description: 'Growing brands online through digital channels.',
-    icon: 'lucideLayers',
+    icon: 'lucide:layers',
   },
   {
     title: 'Product Design',
     description: 'Creating products that users love and businesses need.',
-    icon: 'lucideBoxes',
+    icon: 'lucide:boxes',
   },
   {
     title: 'Web Design',
     description:
       'Designing websites that are visually appealing & user-friendly.',
-    icon: 'lucideRectangleCircle',
+    icon: 'lucide:rectangle-circle',
   },
   {
     title: 'UI/UX Design',
     description:
       'Creating user interfaces that are both efficient and enjoyable.',
-    icon: 'lucidePenTool',
+    icon: 'lucide:pen-tool',
   },
   {
     title: 'Business Strategy',
     description: 'Developing and executing plans to achieve business goals.',
-    icon: 'lucideBriefcaseBusiness',
+    icon: 'lucide:briefcase-business',
   },
   {
     title: 'Research',
     description: 'Gathering and analyzing data to inform decision-making.',
-    icon: 'lucideBinoculars',
+    icon: 'lucide:binoculars',
   },
   {
     title: 'Web Development',
     description: 'Building and maintaining websites and web applications.',
-    icon: 'lucideCode',
+    icon: 'lucide:code',
   },
   {
     title: 'Brand Design',
     description: 'Creating brands that are unique, memorable, and meaningful.',
-    icon: 'lucideTarget',
+    icon: 'lucide:target',
   },
 ]
+
+export type User = {
+  id?: string
+  avatar?: string
+  email?: string
+  username?: string
+  password?: string
+  firstName?: string
+  lastName?: string
+  role?: string
+  token?: string
+}
 
 export const userData: User[] = [
   {
@@ -149,6 +141,14 @@ export const userData: User[] = [
   },
 ]
 
+export type TestimonialType = {
+  userId?: User['id']
+  user?: User
+  title?: string
+  comment: string
+  rating: number
+}
+
 export const testimonials: TestimonialType[] = [
   {
     user: userData[0],
@@ -160,7 +160,7 @@ export const testimonials: TestimonialType[] = [
     user: userData[1],
     comment:
       "The best Bootstrap theme we've ever used - it's easy to customize and comes with all the features we need.",
-    rating: 4,
+    rating: 4.5,
   },
 
   {
@@ -168,7 +168,7 @@ export const testimonials: TestimonialType[] = [
     comment:
       credits.name +
       ' helped us create a stunning website that reflects our brand perfectly.',
-    rating: 5,
+    rating: 4.5,
   },
   {
     user: userData[3],

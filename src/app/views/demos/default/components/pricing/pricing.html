@@ -50,38 +50,38 @@
                                 <h6 class="text-xl font-bold md:mb-6 mb-4">Features list of your need</h6>
                                 <ul class="space-y-3.5 mb-6">
                                     <li class="flex items-center md:justify-start justify-center gap-1 text-default-800">
-                                        <i data-lucide="check" class="text-primary size-4"></i>
+                                        <span class="text-primary size-4"><iconify-icon icon="lucide:check"></iconify-icon></span>
                                         <span>Up to 05 users monthly</span>
                                     </li>
 
                                     <li class="flex items-center gap-1 md:justify-start justify-center text-default-800">
-                                        <i data-lucide="check" class="text-primary size-4"></i>
+                                        <span class="text-primary size-4"><iconify-icon icon="lucide:check"></iconify-icon></span>
                                         <span>Free 5 host & domain</span>
                                     </li>
 
                                     <li class="flex items-center gap-1 md:justify-start justify-center text-default-800">
-                                        <i data-lucide="check" class="text-primary size-4"></i>
+                                        <span class="text-primary size-4"><iconify-icon icon="lucide:check"></iconify-icon></span>
                                         <span>Google Docs style editors</span>
                                     </li>
 
                                     <li class="flex items-center gap-1 md:justify-start justify-center text-default-800">
-                                        <i data-lucide="check" class="text-primary size-4"></i>
+                                        <span class="text-primary size-4"><iconify-icon icon="lucide:check"></iconify-icon></span>
                                         <span>Support for 30+ languages</span>
                                     </li>
 
                                     <li class="flex items-center gap-1 md:justify-start justify-center text-default-800">
-                                        <i data-lucide="check" class="text-primary size-4"></i>
+                                        <span class="text-primary size-4"><iconify-icon icon="lucide:check"></iconify-icon></span>
                                         <span>Landing pages & Web widgets</span>
                                     </li>
 
                                     <li class="flex items-center gap-1 md:justify-start justify-center text-default-800">
-                                        <i data-lucide="check" class="text-primary size-4"></i>
+                                        <span class="text-primary size-4"><iconify-icon icon="lucide:check"></iconify-icon></span>
                                         <span>24/7 Dedicated Support</span>
                                     </li>
                                 </ul>
 
                                 <div class="mb-1.5">
-                                    <a href="#" class="inline-block bg-dark text-white font-medium px-4 py-2 rounded-md shadow hover:bg-dark/85 transition-all duration-300">Start a free 7-day trial</a>
+                                    <a [routerLink]="[]" class="inline-block bg-dark text-white font-medium px-4 py-2 rounded-md shadow hover:bg-dark/85 transition-all duration-300">Start a free 7-day trial</a>
                                 </div>
                                 <p>No credit card is required!</p>
                             </div>
@@ -101,7 +101,7 @@
                         </div>
 
                         <div class="bg-transparent grid text-center p-0 lg:mt-52 mt-30 space-y-3">
-                            <a href="contact-v1.html" class="inline-block bg-white text-black font-medium px-6 py-2 rounded hover:bg-default-200 transition-all duration-300">Contact Sales</a>
+                            <a routerLink="/contact/v1" class="inline-block bg-white text-black font-medium px-6 py-2 rounded hover:bg-default-200 transition-all duration-300">Contact Sales</a>
                             <p class="text-white text-sm">Get personalized demo and custom plan</p>
                         </div>
                     </div>
