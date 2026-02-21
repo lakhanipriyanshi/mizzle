@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { NgIcon } from "@ng-icons/core";
 import { RouterLink } from "@angular/router";
+import { LucideAngularModule } from "lucide-angular";
 
 @Component({
   selector: 'creative-agency-about',
-  imports: [NgIcon, RouterLink],
+  imports: [RouterLink, LucideAngularModule],
   templateUrl: './about.html',
   styles: ``,
 })
-  
 export class About {}
