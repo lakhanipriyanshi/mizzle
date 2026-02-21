@@ -6,10 +6,11 @@ import { Work } from "./components/work/work";
 import { Testimonial } from "./components/testimonial/testimonial";
 import { Features } from "./components/features/features";
 import { Blog } from "./components/blog/blog";
+import { Footer } from "@app/components/footer/footer";
 
 @Component({
   selector: 'app-creative-agency',
-  imports: [Hero, About, Service, Work, Testimonial, Features, Blog],
+  imports: [Hero, About, Service, Work, Testimonial, Features, Blog, Footer],
   templateUrl: './creative-agency.html',
   styles: ``,
 })

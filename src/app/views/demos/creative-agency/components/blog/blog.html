@@ -1,1 +1,113 @@
-<p>blog works!</p>
+ <section class="lg:py-28 md:py-20 py-16">
+        <div class="container">
+            <div class="text-center md:mb-14 mb-6">
+                <h2 class="lg:text-[45px] md:text-4xl text-3xl font-bold">Our news & articles</h2>
+            </div>
+
+            <div class="relative">
+                <button type="button" class="absolute top-1/2 size-12 start-0 z-10 flex items-center justify-center rounded-full bg-dark" aria-label="Previous slide" tabindex="0" aria-controls="swiper-wrapper-7ecd69e85266d388" id="swiper-button-prev">
+                    <lucide-icon name="move-left" class="text-lg text-white"></lucide-icon>
+                </button>
+
+                <button type="button" class="absolute top-1/2 size-12 end-0 z-10 flex items-center justify-center rounded-full bg-dark" aria-label="Next slide" tabindex="0" aria-controls="swiper-wrapper-7ecd69e85266d388" id="swiper-button-next">
+                    <lucide-icon name="move-right" class="text-lg text-white"></lucide-icon>
+                </button>
+
+                <div class="swiper" data-swiper-options='{
+                                "spaceBetween": 30, 
+                                "loop": false,
+                                "breakpoints": {
+                                    "576": {"slidesPerView": 1}, 
+                                    "768": {"slidesPerView": 2}, 
+                                    "992": {"slidesPerView": 3}
+                                },
+                                "navigation":{
+                                    "nextEl":"#swiper-button-next",
+                                    "prevEl":"#swiper-button-prev"
+                                }
+                        }'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="group">
+                                <img src="/images/blog/4by3/01.jpg" class="rounded" />
+                                <div class="mt-6">
+                                    <h6 class="text-xl mb-2">Mastering Responsive Web Design with TailwindCSS</h6>
+                                    <div class="flex justify-between items-center">
+                                        <p>By Carolyn Ortiz</p>
+                                        <a routerLink="/blog/single-v1" class="flex items-center gap-1 text-primary group-hover:text-primary-hover transition-all">
+                                            <span>Read more</span>
+                                            <lucide-icon name="arrow-right" class="size-4 group-hover:ms-1 group-hover:text-primary-hover transition-all"></lucide-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="group">
+                                <img src="/images/blog/4by3/02.jpg" class="rounded" />
+                                <div class="mt-6">
+                                    <h6 class="text-xl mb-2">TailwindCSS Mastery: Designing Stunning Websites</h6>
+                                    <div class="flex justify-between items-center">
+                                        <p>By Dennis Barrett</p>
+                                        <a routerLink="/blog/single-v2" class="flex items-center gap-1 text-primary group-hover:text-primary-hover transition-all">
+                                            <span>Read more</span>
+                                            <lucide-icon name="arrow-right" class="size-4 group-hover:ms-1 group-hover:text-primary-hover transition-all"></lucide-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="group">
+                                <img src="/images/blog/4by3/03.jpg" class="rounded" />
+                                <div class="mt-6">
+                                    <h6 class="text-xl mb-2">Interactive Web Design with TailwindCSS and StackBros</h6>
+                                    <div class="flex justify-between items-center">
+                                        <p>By Carolyn Ortiz</p>
+                                        <a routerLink="/blog/single-v1" class="flex items-center gap-1 text-primary group-hover:text-primary-hover transition-all">
+                                            <span>Read more</span>
+                                            <lucide-icon name="arrow-right" class="size-4 group-hover:ms-1 group-hover:text-primary-hover transition-all"></lucide-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="group">
+                                <img src="/images/blog/4by3/04.jpg" class="rounded" />
+                                <div class="mt-6">
+                                    <h6 class="text-xl mb-2">Effortless Web Development with Mizzle</h6>
+                                    <div class="flex justify-between items-center">
+                                        <p>By Carolyn Ortiz</p>
+                                        <a routerLink="/blog/single-v2" class="flex items-center gap-1 text-primary group-hover:text-primary-hover transition-all">
+                                            <span>Read more</span>
+                                            <lucide-icon name="arrow-right" class="size-4 group-hover:ms-1 group-hover:text-primary-hover transition-all"></lucide-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="group">
+                                <img src="/images/blog/4by3/05.jpg" class="rounded" />
+                                <div class="mt-6">
+                                    <h6 class="text-xl mb-2">Sleek and Responsive - Designing with TailwindCSS and Mizzle</h6>
+                                    <div class="flex justify-between items-center">
+                                        <p>By Carolyn Ortiz</p>
+                                        <a routerLink="/blog/single-v2" class="flex items-center gap-1 text-primary group-hover:text-primary-hover transition-all">
+                                            <span>Read more</span>
+                                            <lucide-icon name="arrow-right" class="size-4 group-hover:ms-1 group-hover:text-primary-hover transition-all"></lucide-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

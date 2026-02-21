@@ -8,6 +8,7 @@ import { initPreline } from './components/preline';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
+  
 export class App {
   protected readonly title = signal('mizzle');
     constructor() {

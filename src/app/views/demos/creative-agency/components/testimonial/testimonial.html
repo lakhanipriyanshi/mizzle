@@ -1,1 +1,43 @@
-<p>testimonial works!</p>
+<section class="lg:pb-0 pb-10">
+  <div class="container">
+    <div class="bg-primary relative rounded pt-12 px-10 pb-6 -mb-44">
+      <span class="absolute start-8 -top-6">
+        <lucide-icon
+          name="quote"
+          class="fill-default-800 text-default-800 md:size-16 size-10"
+        ></lucide-icon>
+      </span>
+
+      <swiper-container
+        class="swiper overflow-hidden"
+        [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [pagination]="{ clickable: true }"
+        pagination="true"
+      >
+        
+          @for (item of testimonials; track $index) {
+            <swiper-slide>
+              <p class="text-2xl text-white">
+                {{ item.comment }}
+              </p>
+              <hr class="my-10 border border-white opacity-20 h-px" />
+              <div class="flex flex-wrap justify-between md:gap-0 gap-y-4 items-center">
+                <div class="flex items-center gap-3">
+                  <img class="rounded-full size-12" [src]="item.user.avatar" alt="avatar" />
+                  <div>
+                    <h6 class="text-xl text-white font-semibold">
+                      {{ item.user.firstName }}{{ item.user.lastName }}
+                    </h6>
+                    <p class="text-sm text-white">Ceo and manager of Blogzine</p>
+                  </div>
+                </div>
+                <img [src]="item.user.company?.image" class="h-10" alt="Client logo" />
+              </div>
+            </swiper-slide>
+          }
+        
+        <div class="swiper-pagination swiper-pagination-line absolute bottom-0 mt-6"></div>
+      </swiper-container>
+    </div>
+  </div>
+</section>

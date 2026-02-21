@@ -1,1 +1,110 @@
-<p>work works!</p>
+<section class="lg:pb-28 md:pb-20 pb-16">
+  <div class="container">
+    <div class="text-center md:mb-14 mb-8">
+      <h2 class="mb-6 lg:text-[45px] md:text-4xl text-3xl font-bold">Showcasing Recent Projects</h2>
+      <p class="lg:w-4xl mx-auto">
+        Discover a selection of our most recent client projects, showcasing our expertise,
+        creativity, and commitment to delivering outstanding results.
+      </p>
+    </div>
+
+    <div class="masonry-filterable">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
+        <div class="lg:col-span-1 md:col-span-1">
+          <div>
+            <h6 class="text-xl font-bold mb-4">Browse by:</h6>
+            <ul
+              class="masonry-filters gap-y-2 flex flex-wrap md:flex-col justify-start lg:mb-10 md:mb-8 mb-6 lg:whitespace-nowrap lg:overflow-x-hidden"
+            >
+              <li>
+                <a
+                  class="active py-2 px-3 flex text-default-800 rounded font-semibold hover:text-white hover:bg-primary [.active]:bg-primary [.active]:text-white transition-all"
+                  (click)="filterItems('*')"
+                  [ngClass]="{ active: activeFilter === '*' }"
+                  >All work</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="py-2 px-3 flex text-default-800 rounded font-semibold hover:text-white hover:bg-primary [.active]:bg-primary [.active]:text-white transition-all"
+                  (click)="filterItems('.marketing')"
+                  [ngClass]="{ active: activeFilter === '.marketing' }"
+                  >Digital Marketing</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="py-2 px-3 flex text-default-800 rounded font-semibold hover:text-white hover:bg-primary [.active]:bg-primary [.active]:text-white transition-all"
+                  (click)="filterItems('.design')"
+                  [ngClass]="{ active: activeFilter === '.design' }"
+                  >Web design</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="py-2 px-3 flex text-default-800 rounded font-semibold hover:text-white hover:bg-primary [.active]:bg-primary [.active]:text-white transition-all"
+                  (click)="filterItems('.business')"
+                  [ngClass]="{ active: activeFilter === '.business' }"
+                  >Business development</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="py-2 px-3 flex text-default-800 rounded font-semibold hover:text-white hover:bg-primary [.active]:bg-primary [.active]:text-white transition-all"
+                  (click)="filterItems('.brand')"
+                  [ngClass]="{ active: activeFilter === '.brand' }"
+                  >Brand design</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="py-2 px-3 flex text-default-800 rounded font-semibold hover:text-white hover:bg-primary [.active]:bg-primary [.active]:text-white transition-all"
+                  (click)="filterItems('.ui')"
+                  [ngClass]="{ active: activeFilter === '.ui' }"
+                  >UI/UX design</a
+                >
+              </li>
+            </ul>
+
+            <a
+              routerLink="/portfolio/showcase"
+              class="bg-default-100 hover:bg-default-200 transition-all font-medium dark:bg-dark dark:hover:bg-dark/80 text-default-900 py-2.5 rounded flex justify-center items-center gap-1 px-6"
+            >
+              View all projects
+              <lucide-icon name="arrow-right" class="size-4"></lucide-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 md:col-span-2">
+          <div class="masonry-grid" appIsotope>
+            @for (item of projectsData; track $index) {
+              <article class="masonry-grid-item lg:w-1/3 md:w-1/2 p-3 {{ item.categoryClass }}">
+                <div class="relative rounded-md overflow-hidden group">
+                  <img [src]="item.image" alt="Dynamic Workflows Website" class="w-full" />
+                  <div
+                    class="absolute inset-0 bg-linear-to-b from-transparent to-black/80 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition"
+                  >
+                    <div class="group-hover:-translate-y-3 transition-all duration-500">
+                      <h6 class="text-white font-semibold">
+                        <a routerLink="{{ item.url }}" class="text-xl text-white font-bold">{{
+                          item.name
+                        }}</a>
+                      </h6>
+                      <small class="text-white">{{ item.category }}</small>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
