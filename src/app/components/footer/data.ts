@@ -44,7 +44,7 @@ export const communityLinks: FooterLinkType[] = [
   },
   {
     name: 'Supports',
-    icon: 'lucide:square-arrow-out-up-right',
+    icon: 'square-arrow-out-up-right',
     link: '/contact/v1',
     className: 'flex items-center',
   },
@@ -68,12 +68,13 @@ export const communityLinks: FooterLinkType[] = [
 type SocialMediaLink = {
   icon: string;
   className: string;
+  iconClassName:string
 };
 
 export const socialMediaLinks: SocialMediaLink[] = [
-  { icon: 'lucide:facebook', className: 'hover:bg-zinc-800' },
-  { icon: 'lucide:instagram', className: 'hover:bg-zinc-800' },
-  { icon: 'lucide:twitter', className: 'hover:bg-zinc-700' },
-  { icon: 'lucide:linkedin', className: 'hover:bg-zinc-700' },
-  { icon: 'lucide:youtube', className: 'hover:bg-zinc-700' },
+  { icon: 'facebook', className: 'hover:bg-zinc-800', iconClassName :'size-3.5' },
+  { icon: 'instagram', className: 'hover:bg-zinc-800',iconClassName :'size-3.5'  },
+  { icon: 'twitter', className: 'hover:bg-zinc-700' ,iconClassName :'size-3.5'},
+  { icon: 'linkedin', className: 'hover:bg-zinc-700',iconClassName :'size-3.5' },
+  { icon: 'youtube', className: 'hover:bg-zinc-700' ,iconClassName :'size-4'},
 ];

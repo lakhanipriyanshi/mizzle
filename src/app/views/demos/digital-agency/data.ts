@@ -1,22 +1,22 @@
-const serviceImg1 = 'assets/images/services/4by3/01.jpg'
-const serviceImg2 = 'assets/images/services/4by3/02.jpg'
-const serviceImg3 = 'assets/images/services/4by3/03.jpg'
-const serviceImg4 = 'assets/images/services/4by3/04.jpg'
-const serviceImg5 = 'assets/images/services/4by3/05.jpg'
-const serviceImg6 = 'assets/images/services/4by3/06.jpg'
+const serviceImg1 = '/images/services/4by3/01.jpg'
+const serviceImg2 = '/images/services/4by3/02.jpg'
+const serviceImg3 = '/images/services/4by3/03.jpg'
+const serviceImg4 = '/images/services/4by3/04.jpg'
+const serviceImg5 = '/images/services/4by3/05.jpg'
+const serviceImg6 = '/images/services/4by3/06.jpg'
 
-const project1 = 'assets/images/portfolio/list/02.jpg'
-const project2 = 'assets/images/portfolio/list/03.jpg'
+const project1 = '/images/portfolio/list/02.jpg'
+const project2 = '/images/portfolio/list/03.jpg'
 
-const avatar2 = 'assets/images/avatar/02.jpg'
-const avatar4 = 'assets/images/avatar/04.jpg'
-const avatar5 = 'assets/images/avatar/05.jpg'
-const avatar6 = 'assets/images/avatar/06.jpg'
-const avatar9 = 'assets/images/avatar/09.jpg'
+const avatar2 = '/images/avatar/02.jpg'
+const avatar4 = '/images/avatar/04.jpg'
+const avatar5 = '/images/avatar/05.jpg'
+const avatar6 = '/images/avatar/06.jpg'
+const avatar9 = '/images/avatar/09.jpg'
 
-const blogImg3 = 'assets/images/blog/4by3/03.jpg'
-const blogImg7 = 'assets/images/blog/4by3/07.jpg'
-const blogImg8 = 'assets/images/blog/4by3/08.jpg'
+const blogImg3 = '/images/blog/4by3/03.jpg'
+const blogImg7 = '/images/blog/4by3/07.jpg'
+const blogImg8 = '/images/blog/4by3/08.jpg'
 
 
 export type ServiceType = {
@@ -70,40 +70,6 @@ export const services: ServiceType[] = [
   },
 ]
 
-export type StepType = {
-  stepNumber?: number
-  icon: string
-  title: string
-  description: string
-}
-
-export const steps: StepType[] = [
-  {
-    title: 'Discovery and Consultation',
-    description:
-      'We begin by getting to know your unique requirements, goals, and challenges.',
-    icon: 'lucide:search',
-  },
-  {
-    title: 'Planning and Strategy',
-    description:
-      'We define project milestones and deliverables to keep the process on track.',
-    icon: 'lucide:target',
-  },
-  {
-    title: 'Deployment and Launch',
-    description:
-      'We ensure a smooth transition to the live, providing support every step of the way.',
-    icon: 'lucide:rocket',
-  },
-  {
-    title: 'Support and Maintenance',
-    description:
-      'We offer ongoing support and maintenance services to keep your software running.',
-    icon: 'lucide:headset',
-  },
-]
-
 export type User = {
   id?: string
   avatar?: string
@@ -144,13 +110,13 @@ export const projects: ProjectType[] = [
     name: 'Website optimization for techWave',
     category: 'Graphic design',
     image: project1,
-    url: '/portfolio/case-study/v2',
+    url: '/portfolio/case-studies/v2',
   },
   {
     name: 'Transforming ideas into reality',
     category: 'UI/UX design',
     image: project2,
-    url: '/portfolio/case-study/v2',
+    url: '/portfolio/case-studies/v2',
   },
 ]
 

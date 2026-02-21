@@ -61,44 +61,44 @@ export const services: ServiceType[] = [
   {
     title: 'Digital Marketing',
     description: 'Growing brands online through digital channels.',
-    icon: 'lucide:layers',
+    icon: 'layers',
   },
   {
     title: 'Product Design',
     description: 'Creating products that users love and businesses need.',
-    icon: 'lucide:boxes',
+    icon: 'boxes',
   },
   {
     title: 'Web Design',
     description:
       'Designing websites that are visually appealing & user-friendly.',
-    icon: 'lucide:rectangle-circle',
+    icon: 'rectangle-circle',
   },
   {
     title: 'UI/UX Design',
     description:
       'Creating user interfaces that are both efficient and enjoyable.',
-    icon: 'lucide:pen-tool',
+    icon: 'pen-tool',
   },
   {
     title: 'Business Strategy',
     description: 'Developing and executing plans to achieve business goals.',
-    icon: 'lucide:briefcase-business',
+    icon: 'briefcase-business',
   },
   {
     title: 'Research',
     description: 'Gathering and analyzing data to inform decision-making.',
-    icon: 'lucide:binoculars',
+    icon: 'binoculars',
   },
   {
     title: 'Web Development',
     description: 'Building and maintaining websites and web applications.',
-    icon: 'lucide:code',
+    icon: 'code',
   },
   {
     title: 'Brand Design',
     description: 'Creating brands that are unique, memorable, and meaningful.',
-    icon: 'lucide:target',
+    icon: 'target',
   },
 ]
 

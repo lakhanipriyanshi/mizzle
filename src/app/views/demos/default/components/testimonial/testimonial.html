@@ -12,7 +12,14 @@
                         <swiper-slide class="swiper-slide">
                             <div class="bg-transparent h-full">
                                 <ul class="flex mb-2 space-x-1">
-                                    <li><app-rating [rating]="item.rating" class="fill-warning text-warning size-4.5"></app-rating></li>
+                                    @for (star of [1,2,3,4]; track $index) {
+                                    <li>
+                                        <lucide-icon name="star" class="fill-warning text-warning size-4.5"></lucide-icon>
+                                    </li>
+                                    }
+                                    <li>
+                                        <lucide-icon name="star-half" class="fill-warning text-warning size-4.5"></lucide-icon>
+                                    </li>
                                 </ul>
                                 <p class="text-default-800 font-normal">{{ item.comment }}</p>
                                 <div class="flex items-center gap-2 mt-4">

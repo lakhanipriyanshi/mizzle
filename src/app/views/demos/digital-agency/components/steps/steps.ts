@@ -1,13 +1,12 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { steps } from '../../data';
+import { LucideAngularModule } from "lucide-angular";
 
 @Component({
   selector: 'digital-agency-steps',
-  imports: [],
+  imports: [LucideAngularModule],
   templateUrl: './steps.html',
   styles: ``,
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class Steps {
-stepsData = steps
 }

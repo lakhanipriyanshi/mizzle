@@ -1,1 +1,31 @@
-<p>projects works!</p>
+ <section class="lg:py-28 md:py-20 py-16">
+        <div class="container">
+            <div class="flex flex-wrap md:justify-between md:gap-0 gap-y-4 items-center md:mb-10 mb-6">
+                <h2 class="lg:text-[45px] md:text-4xl text-3xl">Our latest projects</h2>
+                <a routerLink="/portfolio/list" class="inline-block bg-dark text-white font-medium px-7 py-3 rounded-md shadow hover:bg-dark/85 transition-all duration-300">View all projects</a>
+            </div>
+
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
+                 @for (item of projectsData; track $index) {
+                <div class="bg-default-100 p-3 md:p-6 rounded-md overflow-hidden group">
+                    <div class="overflow-hidden rounded-md">
+                        <img [src]="item.image" alt="portfolio-img" class="w-full h-auto transform transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <div class="flex items-center justify-between mt-6">
+                        <div>
+                            <h5 class="md:text-2xl text-xl font-bold text-default-900 mb-0">
+                                <a [routerLink]="item.url" class="hover:text-default-700 transition-colors duration-300">{{ item.name }}</a>
+                            </h5>
+                            <small class="text-sm">{{ item.category }}</small>
+                        </div>
+
+                        <a [routerLink]="[]" class="shrink-0 inline-flex items-center justify-center size-10 rounded-full bg-dark text-white">
+                            <lucide-icon name="arrow-up-right" class="size-5"></lucide-icon>
+                        </a>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </section>

@@ -52,7 +52,7 @@
                             <li>
                                 <a [routerLink]="item.link" class="text-neutral-400 hover:text-primary transition-all duration-300 font-medium" [class]="item.className">{{item.name}}
                                     @if (item.icon) {
-                                    <iconify-icon [icon]="item.icon" class="ms-1" height="14" width="14"></iconify-icon>
+                                    <lucide-icon [name]="item.icon" class="ms-0.5 size-3.5"></lucide-icon>
                                     }
                                 </a>
                             </li>
@@ -70,7 +70,7 @@
                         <div class="flex gap-x-3">
                             @for (item of socialLinks; track $index; let first = $first) {
                             <a [routerLink]="[]" class="size-8 bg-zinc-900 transition-all duration-200 rounded flex justify-center items-center" [class]="item.className">
-                                <iconify-icon [icon]="item.icon" class="text-white" height="14" width="14"></iconify-icon>
+                                <lucide-icon [name]="item.icon" class="text-white" [class]="item.iconClassName"></lucide-icon>
                             </a>
                             }
                         </div>
@@ -92,9 +92,9 @@
 
             <div class="hs-dropdown relative flex md:justify-end justify-center">
                 <button id="hs-dropdown-with-icons" type="button" class="hs-dropdown-toggle group py-2 px-4 inline-flex items-center gap-x-2 text-xs font-medium rounded text-white bg-zinc-900 hover:bg-white/10 focus:bg-white/10 transition-all" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                    <iconify-icon icon="lucide:globe" class="text-white" height="14" width="14"></iconify-icon>
+                    <lucide-icon name="globe" class="size-3.5 text-white"></lucide-icon>
                     Language
-                    <iconify-icon icon="lucide:chevron-up" height="16" width="16" class="text-white"></iconify-icon>
+                    <lucide-icon name="chevron-up" class="size-4 text-white"></lucide-icon>
                 </button>
 
                 <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-20 bg-dark shadow-md rounded border border-white/14" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-with-icons">

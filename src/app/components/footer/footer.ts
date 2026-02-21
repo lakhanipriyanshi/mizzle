@@ -3,10 +3,11 @@ import { communityLinks, quickLinks, socialMediaLinks } from './data';
 import { RouterLink } from '@angular/router';
 import { credits, currentYear } from '@common/constants';
 import { BackToTop } from '../back-to-top/back-to-top';
+import { LucideAngularModule } from "lucide-angular";
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink, BackToTop],
+  imports: [RouterLink, BackToTop, LucideAngularModule],
   templateUrl: './footer.html',
   styles: ``,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

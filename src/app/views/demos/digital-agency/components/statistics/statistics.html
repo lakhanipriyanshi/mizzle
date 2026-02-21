@@ -1,1 +1,21 @@
-<p>statistics works!</p>
+<section>
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            @for (item of statData; track $index) {
+            <!-- Counter 1 -->
+            <div class="text-center">
+                <div class="flex justify-center font-bold text-default-900 lg:text-8xl md:text-7xl text-5xl">
+                    <span class="text-primary">{{item.prefix}}</span>
+                    <span class="counter" [countUp]="item.stat"></span>
+                    @if ($index === 0) {
+                    <span class="ms-1">{{ item.suffix }}</span>
+                    }@else {
+                    <span class="ms-1 text-primary">{{ item.suffix }}</span>
+                    }
+                </div>
+                <p class="mt-2 text-xl">{{ item.title }}</p>
+            </div>
+            }
+        </div>
+    </div>
+</section>
